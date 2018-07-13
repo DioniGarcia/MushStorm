@@ -1,0 +1,594 @@
+body { margin-top: 60px;}
+
+footer > p{
+	text-align: center;
+}
+
+.modal-content {
+	width: 660px;
+	padding: 16px;
+}
+
+.btn-w-h {
+	width: 180px;
+    height: 35px;
+}
+
+.btn-delete {
+    background-image: -webkit-linear-gradient(top,#c43333 0,#8e0404 100%);
+    background-image: -o-linear-gradient(top,#c43333 0,#8e0404 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#c43333),to(#8e0404));
+    background-image: linear-gradient(to bottom,#c43333 0,#8e0404 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc43333', endColorstr='#ff8e0404', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #8e0404;
+    
+    width: 180px;
+    height: 35px;
+    
+    margin-left: 12px;
+}
+.btn-delete:hover,
+.btn-delete:focus,
+.btn-delete.focus,
+.btn-delete:active,
+.btn-delete.active,
+.open > .dropdown-toggle.btn-delete {
+  color: #fff;
+  background-color: #8e0404;
+  border-color: #c43333;
+  background-image: none;
+}
+
+.btn-chat {
+    background-image: -webkit-linear-gradient(top,#55CC55 0,#56a356 100%);
+    background-image: -o-linear-gradient(top,#55CC55 0,#56a356 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#55CC55),to(#56a356));
+    background-image: linear-gradient(to bottom,#55CC55 0,#56a356 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff55CC55', endColorstr='#ff56a356', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #539d53;
+    
+    width: 180px;
+    height: 35px;
+    
+    margin-left: 12px;
+}
+.btn-chat:hover,
+.btn-chat:focus,
+.btn-chat.focus,
+.btn-chat:active,
+.btn-chat.active,
+.open > .dropdown-toggle.btn-chat{
+  color: #fff;
+  background-color: #56a356;
+  border-color: #55CC55;
+  background-image: none;
+}
+
+.post-info {
+	border: 1px solid gray;
+	border-radius: 12px;
+	padding: 6px;
+	padding-left: 22px;
+	
+	margin-bottom: 32px;
+}
+
+.post-info-offer{
+	background: linear-gradient(to top, #dde8f1, white);	
+	border: 1px solid #cfcfcf;
+}
+
+.post-inf-request {
+	background: linear-gradient(to top, #e4f8d6, white);	
+	border: 1px solid #cfcfcf;
+ }
+
+.post-info .description {
+	margin-right: 22px;
+	height: 100px;
+}
+
+.center {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* FlexBox */
+.valign  {
+	display: flex;
+	align-items: center;
+}
+
+.split-container {
+  margin: auto;
+  display: flex;
+}
+
+.split-item {
+  flex: 1;
+}
+
+.split-item-h {
+  flex: 1;
+}
+
+.split-item-v{
+	
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.split-item-v-foto{
+  flex: 1 1 0px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.split-item-v-texto{
+  flex: 5 1 0px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.center-content-v{
+	display: flex;
+	align-items: center;
+	
+}
+
+.center-content-h{
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+}
+
+.panel-default {
+	width: 400px;	
+	opacity: 0.9;
+	margin-top:30px;
+	flex: 3;
+}
+
+.btn-login {
+	width: 100%;	
+	
+	display: inline-block;
+	
+	font-size: 18px;
+	color: #fff;
+	opacity: 
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	
+	cursor: pointer;
+	background-color: #111;
+	border: 2px solid;
+	border-radius: 25px;
+	opacity: 1.0;
+}
+
+.link {
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+}
+
+.round-shadow {
+	margin-right:50px;
+	margin-left:70px;
+    border-radius: 100px;
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background: #111;
+    opacity: 0.5;
+}
+
+/* Post */
+div.postbox {
+	border: 1px solid;
+	border-radius: 8px;
+	padding: 7px;
+	margin-bottom: 9px;
+	
+	width: 600px;
+    height: 120px;
+}
+
+div.postbox.offerbox {
+	background: linear-gradient(to top, #dde8f1, white);	
+	border-color: #dde8f1;
+	cursor: pointer;
+}
+
+div.postbox.offerbox:hover {
+	background: linear-gradient(to top,#7db8d5, #dde8f1);	
+	border-color: #dde8f1;
+	cursor: pointer;
+}
+
+div.postbox.offerbox:focus, div.postbox.offerbox.focus {
+	background: linear-gradient(to top,#7db8d5, #dde8f1);	
+	border-color: #dde8f1;
+	outline: 0px;
+}
+
+.offerText{
+	color: #3e6579;
+}
+
+
+div.postbox.requestbox{
+	background: linear-gradient(to top,#e4f8d6, white);	
+	border-color: #e4f8d6;
+	cursor: pointer;
+}
+
+div.postbox.requestbox:hover{
+	background: linear-gradient(to top,#95be72, #ebf9e0);	
+	border-color: #ebf9e0;
+	cursor: pointer;
+}
+
+div.postbox.requestbox:focus , div.postbox.requestbox.focus{
+	background: linear-gradient(to top,#95be72, #ebf9e0);	
+	border-color: #ebf9e0;
+	outline: 0px;
+}
+
+.requestText{
+	color: #445736;
+}
+
+.collabbox {
+	background: #fff;
+	border-top: 1px solid;
+	border-color: #ece8ec;
+}
+
+.cortar{
+  width:486px;
+  height:30px;
+  text-overflow:ellipsis;
+  white-space:nowrap; 
+  overflow:hidden;
+  -o-text-overflow: ellipsis; /* para versiones de Opera inferiores a la 11*/
+  -ms-text-overflow: ellipsis; /* para IE8*/
+}
+
+.post-title {
+	font-size: 19px;
+	color: #111;
+	text-align: left;
+	padding-left: 30px;
+	white-space: nowrap;
+	text-overflow: ellipsi;
+	overflow:hidden;
+}
+
+.post-description {
+	font-size: 14px;
+	color: #111;
+	text-align: left;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+.post-date {
+	font-size: 11px;
+	color: #111;
+	opacity: 0.6;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.img-circle-thumbnail {
+   border-radius: 50%;
+   padding: 2px;
+   line-height: 1.42857143;
+   background-color: #eafff3;
+   border: 4px double #ddd;
+}
+
+.split-item .br-theme-bootstrap-stars .br-widget a:after {
+  font-size: small;
+}
+	  
+/* Botones oferta y demanda, Inicio */
+div.banner {
+	  margin-top: 10px;
+	  margin-bottom: 22px;
+	  height: 280px;
+	  width: 100%;
+	  max-height: 50%;
+	  max-width: 100%;
+	  min-height: 20%;
+	  min-width: 30%;
+	  
+	  padding-top: 130px;
+}
+
+div.offer-banner {                                  
+	  background-image: url("../resources/img/banners/banner_offer.png");
+	  background-size:  cover;
+	  
+	  border: 2px solid;
+}
+
+div.request-banner {
+	  background-image: url("../resources/img/banners/banner_request.png");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+
+/* DIVS SETAS */
+
+div.cesarea {                                  
+	  background-image: url("../resources/img/setas/aCes.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.edulis {                                  
+	  background-image: url("../resources/img/setas/bEdu.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.agaricus {                                  
+	  background-image: url("../resources/img/setas/aCam.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.cardo {                                  
+	  background-image: url("../resources/img/setas/pEry.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.cibarius {                                  
+	  background-image: url("../resources/img/setas/cCib.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.rebollon {                                  
+	  background-image: url("../resources/img/setas/lDel.JPG");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+
+div.lutescens {                                  
+	  background-image: url("../resources/img/setas/cLut.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.lepista {                                  
+	  background-image: url("../resources/img/setas/lnud.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.marzo {                                  
+	  background-image: url("../resources/img/setas/marz.png");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.macro {                                  
+	  background-image: url("../resources/img/setas/mPro.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.marasmius {                                  
+	  background-image: url("../resources/img/setas/mOre.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.morchella {                                  
+	  background-image: url("../resources/img/setas/mSp.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.aurea {                                  
+	  background-image: url("../resources/img/setas/rAur.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.jorge {                                  
+	  background-image: url("../resources/img/setas/sJor.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.terreum {                                  
+	  background-image: url("../resources/img/setas/tTer.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+/*................................................................................*/
+div.clavaria {                                  
+	  background-image: url("../resources/img/setas/cTrun.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.cornupcoides {                                  
+	  background-image: url("../resources/img/setas/cCor.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.comatus {                                  
+	  background-image: url("../resources/img/setas/cCom.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.muscaria {                                  
+	  background-image: url("../resources/img/setas/aMus.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.phanterina {                                  
+	  background-image: url("../resources/img/setas/aPan.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.phalloides {                                  
+	  background-image: url("../resources/img/setas/aPal.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.aegerita {                                  
+	  background-image: url("../resources/img/setas/aAeg.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.aereus {                                  
+	  background-image: url("../resources/img/setas/bAer.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.pinicola {                                  
+	  background-image: url("../resources/img/setas/bPin.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.repandum {                                  
+	  background-image: url("../resources/img/setas/hyd.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+div.hygrophorus {                                  
+	  background-image: url("../resources/img/setas/hyg.jpg");
+	  background-size:  cover;
+	  border: 2px solid;
+}
+/*................................................................................*/
+
+.banner-text {					
+	width: 80%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 50px;
+	padding-top: 6px;
+	padding-bottom: 6px;	
+}
+
+.banner-btn-offer {
+	width: 70%;	
+	
+	display: inline-block;
+	
+	font-size: 20px;
+	color: #fff;
+	line-height: 1.42857143;
+	text-align: center;
+	
+	cursor: pointer;
+	border: 2px solid;
+	border-color: white;
+	border-radius: 25px;
+	opacity: 1.0;
+	
+	background-image: linear-gradient(to bottom,#7cb0cb 0,#3b1978 100%);
+}
+
+.banner-btn-offer:hover {
+	background-color: #3e6579;
+	border-color: #3e6579;
+}
+.banner-btn-offer:focus {
+	background-color: #3e6579;
+	border-color: #3e6579;
+}
+
+.banner-btn-request {
+	width: 70%;	
+	
+	display: inline-block;
+	
+	font-size: 20px;
+	color: #fff;
+	line-height: 1.42857143;
+	text-align: center;
+	
+	cursor: pointer;
+	border: 2px solid;
+	border-color: white;
+	border-radius: 25px;
+	opacity: 1.0;
+	
+	background-image: linear-gradient(to bottom,#a2ca84 0,#4a5e3b 100%);
+}
+
+.banner-btn-request:hover {
+	background-color: #4B613A;
+	border-color: #4B613A;
+}
+
+.banner-btn-request:focus {
+	background-color: #4B613A;
+	border-color: #4B613A;
+}
+
+/*Custom pagination*/
+.custom-pagination {
+	margin:20px 0;
+}
+.custom-pagination > ul {}
+.custom-pagination > li {}
+
+.custom-pagination > li > a,
+.custom-pagination > li > span {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(100, 100, 100, 0.05);
+  border: 2px solid #ddd;
+}
+.custom-pagination > li:first-child > a,
+.custom-pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.custom-pagination > li:last-child > a,
+.custom-pagination > li:last-child > span {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.custom-pagination > li > a:hover,
+.custom-pagination > li > span:hover,
+.custom-pagination > li > a:focus,
+.custom-pagination > li > span:focus {
+  color: #5b5b5b;
+  background-color: rgba(100, 100, 100, 0.15);
+  border-color: #ddd;
+}
+.custom-pagination > .active > a,
+.custom-pagination > .active > span,
+.custom-pagination > .active > a:hover,
+.custom-pagination > .active > span:hover,
+.custom-pagination > .active > a:focus,
+.custom-pagination > .active > span:focus {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #939393;
+  border-color: #939393;
+}
+.custom-pagination > .disabled > span,
+.custom-pagination > .disabled > span:hover,
+.custom-pagination > .disabled > span:focus,
+.custom-pagination > .disabled > a,
+.custom-pagination > .disabled > a:hover,
+.custom-pagination > .disabled > a:focus {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.error {
+	color: #f23e3e;
+	font-size: 0.8em;
+}

@@ -1,0 +1,115 @@
+.label_in{
+    padding: 0;
+    padding-right: 24px;
+}
+
+.btn_bot {
+	margin-top: 34px;
+}
+
+#description{
+	width: 338px;
+	height: 82px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.outter{
+	margin: auto;
+	margin-top: 30px;
+	width:100%;
+	height:20px;
+}
+
+
+#inner{
+	float:right;
+	margin:auto;
+	background-color:grey;
+	opacity:0.6;
+	height:525px;
+ 	width:48%;
+}
+
+#legend{
+	float:left;
+	margin:auto;
+	margin-top:0px;
+	/*background-color:green;
+	opacity:0.6;*/
+	height:50px;
+ 	width:48%;
+}
+
+#legLeft{
+	float:left;
+	margin:auto;
+	margin-top:0px;
+	background-color:blue;
+	
+	height:50px;
+ 	width:50%;
+}
+#legRight{
+	float:right;
+	margin:auto;
+	margin-top:0px;
+	background-color:red;
+	
+	height:50px;
+ 	width:50%;
+}
+
+
+#innerPanel{
+	float:center;
+	margin:auto;
+	margin-top:20px;
+	background-color:black;
+	opacity:0.6;
+	height:425px;
+ 	width:85%;
+}
+
+#map{
+	float:left;
+	margin:auto;
+	margin:left: 20px;
+ 	height:525px;
+ 	width:45%;
+}
+#credentials{
+	float: bottom
+	margin:auto;
+	margin-bottom:20px;
+	text-align:center;
+	background-color:white;
+}
+#imageSmall{
+
+	height:80%;
+ 	width:16%;
+
+}
+#left{
+ 
+ float:	left;
+ 
+}
+
+#right{
+ margin:auto;
+ margin-left:50px;
+ margin-top:0px;
+
+ 
+}
+#text{
+ margin:auto;
+ margin-left:60px;
+ margin-bottom:10px;
+ background-color: grey;
+}
