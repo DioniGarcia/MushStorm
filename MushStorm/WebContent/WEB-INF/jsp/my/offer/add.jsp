@@ -40,7 +40,7 @@
 							        r.onload = function(e) { 
 								    var contents = e.target.result;
 							        
-								    alert(contents);
+								    //alert(contents);
 								    
 							        var text = '';
 							        
@@ -54,14 +54,14 @@
 							        for(var i = 0; i < lines.length; i++) {
 							        	
 							        	var line = lines[i].split(" ");
-							        	//alert(lines[i]);
+							        	
 							        	var first = line[0].trim();
 							        	
 							        	if (first != 'C' && first != 'S'){				// Guardar la estación  [X,-,-]
 							        		
 							        		for(var j=0;j<names.length;j++){
 							        			if (first == names[j]){
-							        				alert(j);
+							        				
 							        				station[0] = j;
 							        			}
 							        		}
@@ -70,7 +70,7 @@
 							        		station[1] = 1;
 							        	}else{											// Si es creciiento [-,-,X]
 							        		station[2] = 1;
-							        		alert('satation :'+station)
+							        		
 							        		markers.push(station);
 							        		station = [null,-1,-1];
 							        	}
@@ -82,7 +82,7 @@
 							    } else { 
 							      alert("Failed to load file");
 							    }
-							    //alert("File charged!!");
+							    alert("File charged!!");
 							    
 							    drawMarkers(markers);
 							  }
@@ -163,7 +163,7 @@
     			"Coll d'Ares","Villafranca","Villamalur","Vistabella","Xodos","Gredos"]
     		
     		
-        	alert(arrayEstaciones);
+        	
     		
     		for(var i=0; i<arrayEstaciones.length;i++){
     			
@@ -209,6 +209,7 @@
     		*/
     	}
     	
+    	//Fixed Pointing areas OK
     	var lats = [ //markers
 			[39.900154,-0.341011], // ain
 			[40.372005,-0.719727], //alcala
