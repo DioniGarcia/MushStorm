@@ -43,6 +43,8 @@
 								    alert(contents);
 								    
 							        var text = '';
+							        
+							    	
 							        var names = ['Ain','Alc','Atz','Cat','Tor','Ond','Por','Pue','Coll','Vif','Vim','Vis','Xod','Gri'];
 							        var lines = contents.split(/[\r\n]+/g); // Windows & Unix linebreaks
 									
@@ -59,6 +61,7 @@
 							        		
 							        		for(var j=0;j<names.length;j++){
 							        			if (first == names[j]){
+							        				alert(j);
 							        				station[0] = j;
 							        			}
 							        		}
@@ -67,6 +70,7 @@
 							        		station[1] = 1;
 							        	}else{											// Si es creciiento [-,-,X]
 							        		station[2] = 1;
+							        		alert('satation :'+station)
 							        		markers.push(station);
 							        		station = [null,-1,-1];
 							        	}
@@ -78,7 +82,7 @@
 							    } else { 
 							      alert("Failed to load file");
 							    }
-							    alert("File charged!!");
+							    //alert("File charged!!");
 							    
 							    drawMarkers(markers);
 							  }
@@ -158,13 +162,16 @@
     		var labels = ['Ain','Alcalá','Atzeneta',"Cati","El toro","Onda","Portell Morella","Puebla San Miguel",
     			"Coll d'Ares","Villafranca","Villamalur","Vistabella","Xodos","Gredos"]
     		
+    		
+        	alert(arrayEstaciones);
+    		
     		for(var i=0; i<arrayEstaciones.length;i++){
     			
     			if (arrayEstaciones[i][2] != -1) {
   
     				var mOpt = {
-    						position: new google.maps.LatLng(lats[i][0],lats[i][1]),
-    						animation : google.maps.Animation.BOUNCE,
+    						position: new google.maps.LatLng(lats[  (arrayEstaciones[i][0]) ][0],lats[  (arrayEstaciones[i][0]) ][1]),
+    						//animation : google.maps.Animation.BOUNCE,
     						optimized: false,
     						icon: iconGrow
     	    		};
@@ -176,7 +183,7 @@
     			if (arrayEstaciones[i][1] != -1) {
     				
     				var mOpt = {
-    						position: new google.maps.LatLng(lats[i][0],lats[i][1]),
+    						position: new google.maps.LatLng(lats[  (arrayEstaciones[i][0]) ][0],lats[  (arrayEstaciones[i][0]) ][1]),
     						animation : google.maps.Animation.BOUNCE,
     						optimized: false,
     						icon: iconMush
@@ -213,10 +220,12 @@
 			[40.045182,-1.144598],	//puebla san miguel
 			[40.4359264,-0.0925195],	// Coll D'Ares
 			[40.441129,-0.271394],	//villafranca
+			[39.9611482,-0.4030531], //Villamalur
 			[40.2938137,-0.2931178], //vistabella
 			[40.244979,-0.286952],	//xodos
 			[40.466670,-1.516800]	//gredos
 	    ];
+    	
     	
     </script>
     <!--
